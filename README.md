@@ -8,9 +8,9 @@
 * For "empty" elements, do not use XHTML closing syntax `<br />` — just use `<br>`.
 * Although HTML5 allows omitting certain closing tags, like `</p>` and `</li>`, *Don't*.
 * Keep `<head>` section in the following order:
-  1. `<meta>` elements
-  2. `<title>` element
-  3. Style sheets
+  # `<meta>` elements
+  # `<title>` element
+  # Style sheets
 * Stick to proper semantics:
   * Don't use a `<div>` or `<span>` when a more meaningful element is available.
   * Of course, for web *applications*, there's usually not much call for `<article>`, `<blockquote>`, or `<>`.
