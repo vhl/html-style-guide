@@ -13,7 +13,6 @@
   3. Style sheets
 * Stick to proper semantics:
   * Don't use a `<div>` or `<span>` when a more meaningful element is available.
-  * Of course, for web *applications*, there's usually not much call for `<article>`, `<blockquote>`, or `<>`.
 * Avoid unnecessary nesting:
   * Don't add additional `<div>` wrappers just for the sake of adding a class. If you already have a `<ul>` or <`p`>, and the class  doesn't require a specific element, put the class on the `<ul`> or <`p`>.
 * Scripts should generally be included at the end so they don't block loading of content or styles.
