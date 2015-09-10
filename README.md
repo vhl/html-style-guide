@@ -1,11 +1,5 @@
 # HTML Style Guide
 
-Related guides:
-* [CSS Style Guide](https://github.com/vhl/css-style-guide)
-* [Javascript Style Guide](https://github.com/vhl/javascript-style-guide)
-* Since our HTML is delivered via Rails layouts & partials, be sure to follow the appropriate [Ruby](https://github.com/vhl/ruby-style-guide) and [Rails](https://github.com/vhl/rails-style-guide) guidelines.
-
-
 ## Guidelines
 
 * Keep HTML structure as simple as possible.
