@@ -10,7 +10,7 @@ _A guide to writing and maintaining good markup._
 - [Stick to proper semantics.](#stick-to-proper-semantics)
 - [Use 2 spaces for indentation.](#use-2-spaces-for-indentation)
 - [Lowercase all element and attribute names.](#lowercase-all-element-and-attribute-names)
-- [For "empty" elements, do not use XHTML-style closing syntax `` — just use ``.](#for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-)
+- [Use a slash in self closing tags.](#use-a-slash-in-self-closing-tags)
 - [Don't omit closing tags.](#dont-omit-closing-tags)
 - [Order of elements in the ``.](#order-of-elements-in-the-)
 - [Include styles in the ``](#include-styles-in-the-)
@@ -53,8 +53,10 @@ Set your editor to use spaces, not tabs.
 ### Lowercase all element and attribute names.
 
 
-<a name="for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-"></a>
-### For "empty" elements, do not use XHTML-style closing syntax `<br />` — just use `<br>`.
+<a name="use-a-slash-in-self-closing-tags"></a>
+### Use a slash in self-closing tags.
+
+For "empty" elements, do use XHTML-style closing syntax `<br />` — just use `<br>`.
 
 
 <a name="dont-omit-closing-tags"></a>
