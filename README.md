@@ -1,30 +1,27 @@
 # HTML Style Guide
 
+_A guide to writing and maintaining good markup._
+
+
 <!-- MarkdownTOC -->
 
-- [Guidelines](#guidelines)
-  - [Keep HTML structure as simple as possible.](#keep-html-structure-as-simple-as-possible)
-  - [Elements should be appropriately nested to maintain a sensible hierarchical document structure.](#elements-should-be-appropriately-nested-to-maintain-a-sensible-hierarchical-document-structure)
-  - [Stick to proper semantics.](#stick-to-proper-semantics)
-  - [Use 2 spaces for indentation.](#use-2-spaces-for-indentation)
-  - [Lowercase all element and attribute names.](#lowercase-all-element-and-attribute-names)
-  - [For "empty" elements, do not use XHTML-style closing syntax `` — just use ``.](#for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-)
-  - [Don't omit closing tags.](#dont-omit-closing-tags)
-  - [Order of elements in the ``.](#order-of-elements-in-the-)
-  - [Include styles in the ``](#include-styles-in-the-)
-  - [Include scripts at the end of the ``](#include-scripts-at-the-end-of-the-)
-  - [Keep content, presentation, and behavior separate.](#keep-content-presentation-and-behavior-separate)
-  - [Use ARIA roles and labels when appropriate.](#use-aria-roles-and-labels-when-appropriate)
-  - [Use HTML5 form control *types* when applicable](#use-html5-form-control-types-when-applicable)
+- [Keep HTML structure as simple as possible.](#keep-html-structure-as-simple-as-possible)
+- [Elements should be appropriately nested to maintain a sensible hierarchical document structure.](#elements-should-be-appropriately-nested-to-maintain-a-sensible-hierarchical-document-structure)
+- [Stick to proper semantics.](#stick-to-proper-semantics)
+- [Use 2 spaces for indentation.](#use-2-spaces-for-indentation)
+- [Lowercase all element and attribute names.](#lowercase-all-element-and-attribute-names)
+- [For "empty" elements, do not use XHTML-style closing syntax `` — just use ``.](#for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-)
+- [Don't omit closing tags.](#dont-omit-closing-tags)
+- [Order of elements in the ``.](#order-of-elements-in-the-)
+- [Include styles in the ``](#include-styles-in-the-)
+- [Include scripts at the end of the ``](#include-scripts-at-the-end-of-the-)
+- [Keep content, presentation, and behavior separate.](#keep-content-presentation-and-behavior-separate)
+- [Use ARIA roles and labels when appropriate.](#use-aria-roles-and-labels-when-appropriate)
+- [Use HTML5 form control *types* when applicable](#use-html5-form-control-types-when-applicable)
 
 <!-- /MarkdownTOC -->
 
 
-
-
-
-<a name="guidelines"></a>
-## Guidelines
 
 
 <a name="keep-html-structure-as-simple-as-possible"></a>
