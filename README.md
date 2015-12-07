@@ -9,6 +9,7 @@ _A guide to writing and maintaining good markup._
 - [Elements should be appropriately nested to maintain a sensible hierarchical document structure.](#elements-should-be-appropriately-nested-to-maintain-a-sensible-hierarchical-document-structure)
 - [Stick to proper semantics.](#stick-to-proper-semantics)
 - [Use 2 spaces for indentation.](#use-2-spaces-for-indentation)
+- [Stick to a line length of 100 characters.](#stick-to-a-line-length-of-100-characters)
 - [Lowercase all element and attribute names.](#lowercase-all-element-and-attribute-names)
 - [For "empty" elements, do not use XHTML-style closing syntax `` — just use ``.](#for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-)
 - [Don't omit closing tags.](#dont-omit-closing-tags)
@@ -48,6 +49,14 @@ _A guide to writing and maintaining good markup._
 
 Set your editor to use spaces, not tabs.
 
+
+<a name="stick-to-a-line-length-of-100-characters"></a>
+### Stick to a line length of 100 characters.
+
+* Wrap lines that are overlong.
+* Indent wrapped lines twice to distinguish them from nested elements.
+* Align attribute names for all lines after the first.
+* One attribute per line when manually wrapping.
 
 <a name="lowercase-all-element-and-attribute-names"></a>
 ### Lowercase all element and attribute names.
