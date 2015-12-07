@@ -54,9 +54,10 @@ Set your editor to use spaces, not tabs.
 ### Stick to a line length of 100 characters.
 
 * Wrap lines that are overlong.
-* Indent wrapped lines twice to distinguish them from nested elements.
 * Align attribute names for all lines after the first.
+* Indent wrapped lines at least twice to distinguish them from nested elements and honor the previous item.
 * One attribute per line when manually wrapping.
+* For one-character element names, it's OK that the first attribute won't align with the rest.
 
 <a name="lowercase-all-element-and-attribute-names"></a>
 ### Lowercase all element and attribute names.
