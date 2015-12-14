@@ -62,6 +62,7 @@ Set your editor to use spaces, not tabs.
 * DO use IDs to make associations between elements for accessibility purposes:
   * `<label for="ac-address-field">Address</label> <input type="text" id="ac-address-field">`
   * `<span id="ac-name-label">Name</span> <div class="some-widget" aria-labelledby="ac-name-label"></div>`
+  * Note the "ac-" prefix convention for accessibility-related IDs.
 
 
 <a name="dont-omit-closing-tags"></a>
