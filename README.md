@@ -11,11 +11,10 @@ _A guide to writing and maintaining good markup._
 - [Use 2 spaces for indentation.](#use-2-spaces-for-indentation)
 - [Lowercase all element and attribute names.](#lowercase-all-element-and-attribute-names)
 - [Use ID attributes sparingly.](#use-id-attributes-sparingly)
-- [For "empty" elements, do not use XHTML-style closing syntax `` — just use ``.](#for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-)
 - [Don't omit closing tags.](#dont-omit-closing-tags)
-- [Order of elements in the ``.](#order-of-elements-in-the-)
-- [Include styles in the ``](#include-styles-in-the-)
-- [Include scripts at the end of the ``](#include-scripts-at-the-end-of-the-)
+- [Order of elements in the HEAD.](#order-of-elements-in-the-head)
+- [Include styles in the HEAD](#include-styles-in-the-head)
+- [Include scripts at the end of the BODY](#include-scripts-at-the-end-of-the-body)
 - [Keep content, presentation, and behavior separate.](#keep-content-presentation-and-behavior-separate)
 - [Use ARIA roles and labels when appropriate.](#use-aria-roles-and-labels-when-appropriate)
 - [Use HTML5 form control *types* when applicable](#use-html5-form-control-types-when-applicable)
@@ -65,18 +64,14 @@ Set your editor to use spaces, not tabs.
   * `<span id="ac-name-label">Name</span> <div class="some-widget" aria-labelledby="ac-name-label"></div>`
 
 
-<a name="for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-"></a>
-### For "empty" elements, do not use XHTML-style closing syntax `<br />` — just use `<br>`.
-
-
 <a name="dont-omit-closing-tags"></a>
 ### Don't omit closing tags.
 
 Although HTML5 allows omitting certain closing tags, like `</p>` and `</li>`, *Don't*.
 
 
-<a name="order-of-elements-in-the-"></a>
-### Order of elements in the `<head>`.
+<a name="order-of-elements-in-the-head"></a>
+### Order of elements in the HEAD.
 
 Keep `<head>` section in the following order:
 
@@ -85,14 +80,14 @@ Keep `<head>` section in the following order:
 3. Style sheets
 
 
-<a name="include-styles-in-the-"></a>
-### Include styles in the `<head>`
+<a name="include-styles-in-the-head"></a>
+### Include styles in the HEAD
 
 They should start loading & rendering as soon as possible.
 
 
-<a name="include-scripts-at-the-end-of-the-"></a>
-### Include scripts at the end of the `<body>`
+<a name="include-scripts-at-the-end-of-the-body"></a>
+### Include scripts at the end of the BODY
 
 Scripts should generally be included at the end so they don't block loading of content or styles.
 
