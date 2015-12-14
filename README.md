@@ -10,6 +10,7 @@ _A guide to writing and maintaining good markup._
 - [Stick to proper semantics.](#stick-to-proper-semantics)
 - [Use 2 spaces for indentation.](#use-2-spaces-for-indentation)
 - [Lowercase all element and attribute names.](#lowercase-all-element-and-attribute-names)
+- [Use ID attributes sparingly.](#use-id-attributes-sparingly)
 - [For "empty" elements, do not use XHTML-style closing syntax `` — just use ``.](#for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-)
 - [Don't omit closing tags.](#dont-omit-closing-tags)
 - [Order of elements in the ``.](#order-of-elements-in-the-)
@@ -51,6 +52,17 @@ Set your editor to use spaces, not tabs.
 
 <a name="lowercase-all-element-and-attribute-names"></a>
 ### Lowercase all element and attribute names.
+
+
+<a name="use-id-attributes-sparingly"></a>
+### Use ID attributes sparingly.
+
+* NEVER use IDs as CSS selectors; it makes style overrides unnecessarily difficult.
+* Don't use IDs for JavaScript hooks: use a "js-" prefixed classname instead.
+* Don't use IDs for automated testing hooks: use a "test-" prefixed classname instead.
+* DO use IDs to make associations between elements for accessibility purposes:
+  * `<label for="ac-address-field">Address</label> <input type="text" id="ac-address-field">`
+  * `<span id="ac-name-label">Name</span> <div class="some-widget" aria-labelledby="ac-name-label"></div>`
 
 
 <a name="for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-"></a>
