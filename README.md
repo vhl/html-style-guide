@@ -18,7 +18,7 @@ _A guide to writing and maintaining good markup._
 - [Keep content, presentation, and behavior separate.](#keep-content-presentation-and-behavior-separate)
 - [Use ARIA roles and labels when appropriate.](#use-aria-roles-and-labels-when-appropriate)
 - [Use HTML5 form control *types* when applicable](#use-html5-form-control-types-when-applicable)
-
+- [Anchor tag usage](#anchor-tag-usage)
 <!-- /MarkdownTOC -->
 
 
@@ -105,4 +105,31 @@ E.g., `url`, `email`, etc.
 
 Doing this communicates semantics to user agents and assistive tech. For example, using `type="numeric"` might trigger the appropriate keyboard state on mobile.
 
+<a name="anchor-tag-usage"></a>
+### Anchor Tag Usage
 
+#### Placeholder Anchor Tags
+```
+<a>Text</a>
+```
+
+Placeholders are great for navigation or displaying hidden information on a page. Using a placeholder makes the element read as clickable to a screenreader so it is the preferred solution over a `<div>` or `<span>`.
+
+This element type first became valid in the HTML5 spec, so make sure your DOCTYPE isn't XHTML before use. If you're stuck in older HTML, use a link anchor tag.
+
+Reference: http://stackoverflow.com/questions/5292343/is-an-anchor-tag-without-the-href-attribute-safe
+
+#### Links
+```
+<a href="www.google.com">Search Google</a>
+```
+
+Use this style of anchor tag to create links to other pages.
+
+If using a link anchor tag as a placeholder (`<a href="#">Not a real link</a>), then be sure to add `ev.preventDefault()` to your JS click event. Otherwise, the page will jump to the top every time a user clicks your placeholder.
+
+#### Buttons vs. Anchor Tags
+[The Difference Between Anchors, Inputs, and Buttons](https://davidwalsh.name/html5-buttons)
+[When to Use the Button Element](https://css-tricks.com/use-button-element/)
+
+(Expand on our preferred solution to common problems concerning which element to use.)
