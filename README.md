@@ -115,7 +115,7 @@ Doing this communicates semantics to user agents and assistive tech. For example
 
 Use this style of anchor tag to create links to other pages.
 
-If using a link anchor tag as a placeholder (`<a href="#">Not a real link</a>`), then be sure to add `ev.preventDefault()` to your JS click event heandler. Alternatively, use `href="#0"` to prevent the default link action. Otherwise, the page will jump to the top every time a user clicks your placeholder.
+If using a link anchor tag as a placeholder (`<a href="#">Not a real link</a>`), then be sure to add `ev.preventDefault()` to your JS click event heandler. Alternatively, use `href="#0"` to prevent the default link action. `#0` works because ids cannot start with a number. Otherwise, the page will jump to the top every time a user clicks your placeholder.
 
 Note: This is *NOT* the same thing as `<link rel="">`.
 
@@ -142,7 +142,7 @@ Anchors are great for jumping to information farther down a page.
 #### Buttons vs.Links vs. Anchors
 ##### The semantic question of link vs button:
  * A button invokes an action: Save, Cancel, Exterminate.
-  * Activated with the `Space` or `Enter` key. Screen reader users may assume this is a form submission and be slightly more trepidacious about activiating it than a link.
+  * Activated with the `Space` or `Enter` key. Screen reader users may assume this is a form submission and be slightly more trepidacious about activating it than a link.
   * Identified in screen readers as a button, and included in the list of form controls.
  * A link takes you somewhere (navigates).
   * Activated with the `Enter` key.
