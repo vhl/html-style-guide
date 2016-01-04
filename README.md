@@ -116,8 +116,6 @@ Doing this communicates semantics to user agents and assistive tech. For example
 
 Anchors are great for navigation or displaying hidden information on a page. Using an anchor makes the element read as clickable to a screenreader so it is the preferred solution over a `<div>` or `<span>`.
 
-This element type first became valid in the HTML5 spec, so make sure your DOCTYPE isn't XHTML before use. If you're stuck in older HTML, use a link anchor tag.
-
 Reference: http://stackoverflow.com/questions/5292343/is-an-anchor-tag-without-the-href-attribute-safe
 
 #### Links
