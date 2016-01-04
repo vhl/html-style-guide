@@ -19,6 +19,7 @@ _A guide to writing and maintaining good markup._
 - [Use ARIA roles and labels when appropriate.](#use-aria-roles-and-labels-when-appropriate)
 - [Use HTML5 form control *types* when applicable](#use-html5-form-control-types-when-applicable)
 - [Anchor tag usage](#anchor-tag-usage)
+
 <!-- /MarkdownTOC -->
 
 
@@ -108,12 +109,12 @@ Doing this communicates semantics to user agents and assistive tech. For example
 <a name="anchor-tag-usage"></a>
 ### Anchor Tag Usage
 
-#### Placeholder Anchor Tags
+#### Anchors
 ```
 <a>Text</a>
 ```
 
-Placeholders are great for navigation or displaying hidden information on a page. Using a placeholder makes the element read as clickable to a screenreader so it is the preferred solution over a `<div>` or `<span>`.
+Anchors are great for navigation or displaying hidden information on a page. Using an anchor makes the element read as clickable to a screenreader so it is the preferred solution over a `<div>` or `<span>`.
 
 This element type first became valid in the HTML5 spec, so make sure your DOCTYPE isn't XHTML before use. If you're stuck in older HTML, use a link anchor tag.
 
@@ -126,10 +127,28 @@ Reference: http://stackoverflow.com/questions/5292343/is-an-anchor-tag-without-t
 
 Use this style of anchor tag to create links to other pages.
 
-If using a link anchor tag as a placeholder (`<a href="#">Not a real link</a>), then be sure to add `ev.preventDefault()` to your JS click event. Otherwise, the page will jump to the top every time a user clicks your placeholder.
+If using a link anchor tag as a placeholder (`<a href="#">Not a real link</a>`), then be sure to add `ev.preventDefault()` to your JS click event heandler. Alternatively, use `href="javascript://"` (there are other variations on this) to prevent the default link action. Otherwise, the page will jump to the top every time a user clicks your placeholder.
 
-#### Buttons vs. Anchor Tags
-[The Difference Between Anchors, Inputs, and Buttons](https://davidwalsh.name/html5-buttons)
-[When to Use the Button Element](https://css-tricks.com/use-button-element/)
+Note: This is *NOT* the same thing as `<link rel="">`.
 
-(Expand on our preferred solution to common problems concerning which element to use.)
+#### Buttons vs. Anchors/Links
+##### The semantic question of link vs button:
+ * A button invokes an action: Save, Cancel, Exterminate.
+  * Activated with the `Space` key. Screen reader users may assume this is a form submission, and be slightly more trepidacious about activiating it than a link.
+  * Identified in screen readers as a button, and included in the list of form controls.
+ * A link takes you somewhere (navigates).
+  * Activated with the `Enter` key.
+  * Identified in screen readers as a link, and included in the list of page links.
+    
+##### The difference between `<button>` and `<input type="submit/button/etc">`:
+ * You can use either. The advantage of `<button>` is that you can put other elements inside it, whereas you can only use plain text labels for `<input>`-style buttons.
+ * A `button` is by default a *submit* button, and will trigger the action of a form if it's inside one. Add `type="button"` to make it a non-submit button.
+
+##### There _are_ ambiguous cases:
+* One common pattern is to present the primary action as a button and the secondary action as a link (e.g., Save button and Cancel link). 
+
+As with everything, it's not simply a matter of style -- the semantics are important, and have real consequences for keyboard and screen reader users.
+
+##### Further reading:
+- [The Difference Between Anchors, Inputs, and Buttons](https://davidwalsh.name/html5-buttons)
+- [When to Use the Button Element](https://css-tricks.com/use-button-element/)
