@@ -10,11 +10,11 @@ _A guide to writing and maintaining good markup._
 - [Stick to proper semantics.](#stick-to-proper-semantics)
 - [Use 2 spaces for indentation.](#use-2-spaces-for-indentation)
 - [Lowercase all element and attribute names.](#lowercase-all-element-and-attribute-names)
-- [For "empty" elements, do not use XHTML-style closing syntax `` — just use ``.](#for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-)
+- [Use ID attributes sparingly.](#use-id-attributes-sparingly)
 - [Don't omit closing tags.](#dont-omit-closing-tags)
-- [Order of elements in the ``.](#order-of-elements-in-the-)
-- [Include styles in the ``](#include-styles-in-the-)
-- [Include scripts at the end of the ``](#include-scripts-at-the-end-of-the-)
+- [Order of elements in the HEAD.](#order-of-elements-in-the-head)
+- [Include styles in the HEAD](#include-styles-in-the-head)
+- [Include scripts at the end of the BODY](#include-scripts-at-the-end-of-the-body)
 - [Keep content, presentation, and behavior separate.](#keep-content-presentation-and-behavior-separate)
 - [Use ARIA roles and labels when appropriate.](#use-aria-roles-and-labels-when-appropriate)
 - [Use HTML5 form control *types* when applicable](#use-html5-form-control-types-when-applicable)
@@ -54,8 +54,16 @@ Set your editor to use spaces, not tabs.
 ### Lowercase all element and attribute names.
 
 
-<a name="for-empty-elements-do-not-use-xhtml-style-closing-syntax--—-just-use-"></a>
-### For "empty" elements, do not use XHTML-style closing syntax `<br />` — just use `<br>`.
+<a name="use-id-attributes-sparingly"></a>
+### Use ID attributes sparingly.
+
+* NEVER use IDs as CSS selectors; it makes style overrides unnecessarily difficult.
+* Don't use IDs for JavaScript hooks: use a "js-" prefixed classname instead.
+* Don't use IDs for automated testing hooks: use a "test-" prefixed classname instead.
+* DO use IDs to make associations between elements for accessibility purposes:
+  * `<label for="ac-address-field">Address</label> <input type="text" id="ac-address-field">`
+  * `<span id="ac-name-label">Name</span> <div class="some-widget" aria-labelledby="ac-name-label"></div>`
+  * Note the "ac-" prefix convention for accessibility-related IDs.
 
 
 <a name="dont-omit-closing-tags"></a>
@@ -64,8 +72,8 @@ Set your editor to use spaces, not tabs.
 Although HTML5 allows omitting certain closing tags, like `</p>` and `</li>`, *Don't*.
 
 
-<a name="order-of-elements-in-the-"></a>
-### Order of elements in the `<head>`.
+<a name="order-of-elements-in-the-head"></a>
+### Order of elements in the HEAD.
 
 Keep `<head>` section in the following order:
 
@@ -74,14 +82,14 @@ Keep `<head>` section in the following order:
 3. Style sheets
 
 
-<a name="include-styles-in-the-"></a>
-### Include styles in the `<head>`
+<a name="include-styles-in-the-head"></a>
+### Include styles in the HEAD
 
 They should start loading & rendering as soon as possible.
 
 
-<a name="include-scripts-at-the-end-of-the-"></a>
-### Include scripts at the end of the `<body>`
+<a name="include-scripts-at-the-end-of-the-body"></a>
+### Include scripts at the end of the BODY
 
 Scripts should generally be included at the end so they don't block loading of content or styles.
 
