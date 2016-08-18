@@ -5,14 +5,14 @@ _A guide to writing and maintaining good markup._
 Probably, as [@davexunit](https://github.com/davexunit) says, we should stop writing all this by hand and make it programmatic. 
 
 
-<!-- MarkdownTOC -->
+<!-- MarkdownTOC depth=3 -->
 
 - [Keep HTML structure as simple as possible.](#keep-html-structure-as-simple-as-possible)
 - [Structure markup to create meaningful hierarchical relationships.](#structure-markup-to-create-meaningful-hierarchical-relationships)
 - [Stick to proper semantics.](#stick-to-proper-semantics)
 - [Use 2 spaces for indentation.](#use-2-spaces-for-indentation)
 - [Lowercase all element and attribute names.](#lowercase-all-element-and-attribute-names)
-- [Use a slash in self closing tags.](#use-a-slash-in-self-closing-tags)
+- [Use a slash in self-closing tags.](#use-a-slash-in-self-closing-tags)
 - [Don't omit closing tags.](#dont-omit-closing-tags)
 - [Order of elements in the HEAD.](#order-of-elements-in-the-head)
 - [Give your document a useful title.](#give-your-document-a-useful-title)
@@ -21,7 +21,7 @@ Probably, as [@davexunit](https://github.com/davexunit) says, we should stop wri
 - [Keep content, presentation, and behavior separate.](#keep-content-presentation-and-behavior-separate)
 - [Use ARIA roles and labels when appropriate.](#use-aria-roles-and-labels-when-appropriate)
 - [Use HTML5 input types when applicable](#use-html5-input-types-when-applicable)
-- [Links, Buttons, & Anchors](#links-buttons-anchors)
+- [Links, Buttons & Anchors](#links-buttons--anchors)
 
 <!-- /MarkdownTOC -->
 
@@ -62,7 +62,7 @@ Set your editor to use spaces, not tabs.
 <a name="use-a-slash-in-self-closing-tags"></a>
 ### Use a slash in self-closing tags.
 
-For "empty" elements, do use XHTML-style closing syntax `<br />` — just use `<br>`.
+For "empty" elements, use XHTML-style closing syntax: `<br />, <link rel="..." />`.
 
 
 <a name="dont-omit-closing-tags"></a>
@@ -138,7 +138,7 @@ E.g., `url`, `email`, etc.
 
 Doing this communicates semantics to user agents and assistive tech. For example, using `type="numeric"` might trigger the appropriate keyboard state on mobile.
 
-<a name="links-buttons-anchors"></a>
+<a name="links-buttons--anchors"></a>
 ### Links, Buttons & Anchors
 #### Links
 ```
