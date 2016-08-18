@@ -44,7 +44,7 @@ Ideally, if you view your document with all styles turned off, a page should res
 * Don't use a `<div>` or `<span>` when a more meaningful element is available.
   * `<ul>` for lists
   * `<a>` for links
-  * <input type="button"> or <button> for buttons
+  * `<input type="button">` or `<button>` for buttons
   * etc.
 * Never add a `<div>` or `<span>` with no attributes.
 
