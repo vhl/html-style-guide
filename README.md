@@ -17,7 +17,6 @@ Probably, as [@davexunit](https://github.com/davexunit) says, we should stop wri
 - [Order of elements in the HEAD.](#order-of-elements-in-the-head)
 - [Give your document a useful title.](#give-your-document-a-useful-title)
 - [Include all stylesheet links in the HEAD.](#include-all-stylesheet-links-in-the-head)
-- [Include scripts at the end of the BODY.](#include-scripts-at-the-end-of-the-body)
 - [Keep content, presentation, and behavior separate.](#keep-content-presentation-and-behavior-separate)
 - [Use ARIA roles and labels when appropriate.](#use-aria-roles-and-labels-when-appropriate)
 - [Use HTML5 input types when applicable](#use-html5-input-types-when-applicable)
@@ -88,12 +87,6 @@ Keep `<head>` section in the following order:
 ### Include all stylesheet links in the HEAD.
 
 They should start loading & rendering as soon as possible.
-
-
-<a name="include-scripts-at-the-end-of-the-body"></a>
-### Include scripts at the end of the BODY.
-
-Scripts should generally be included at the end so they don't block loading of content or styles.
 
 
 <a name="keep-content-presentation-and-behavior-separate"></a>
