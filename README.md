@@ -17,7 +17,6 @@ Probably, as [@davexunit](https://github.com/davexunit) says, we should stop wri
 - [Order of elements in the HEAD.](#order-of-elements-in-the-head)
 - [Give your document a useful title.](#give-your-document-a-useful-title)
 - [Include all stylesheet links in the HEAD.](#include-all-stylesheet-links-in-the-head)
-- [Include scripts at the end of the BODY.](#include-scripts-at-the-end-of-the-body)
 - [Keep content, presentation, and behavior separate.](#keep-content-presentation-and-behavior-separate)
 - [Use ARIA roles and labels when appropriate.](#use-aria-roles-and-labels-when-appropriate)
 - [Use HTML5 input types when applicable](#use-html5-input-types-when-applicable)
@@ -88,12 +87,6 @@ Keep `<head>` section in the following order:
 ### Include all stylesheet links in the HEAD.
 
 They should start loading & rendering as soon as possible.
-
-
-<a name="include-scripts-at-the-end-of-the-body"></a>
-### Include scripts at the end of the BODY.
-
-Scripts should generally be included at the end so they don't block loading of content or styles.
 
 
 <a name="keep-content-presentation-and-behavior-separate"></a>
@@ -173,15 +166,14 @@ Anchors are great for jumping to information farther down a page.
 
 #### Buttons vs.Links vs. Anchors
 ##### The semantic question of link vs button:
- * A button invokes an action: Save, Cancel, Exterminate.
-  * Activated with the `Space` or `Enter` key. Screen reader users may assume this is a form submission and be slightly more trepidacious about activating it than a link.
-  * Identified in screen readers as a button, and included in the list of form controls.
- * A link takes you somewhere (navigates).
-  * Activated with the `Enter` key.
-  * Identified in screen readers as a link, and included in the list of page links.
+|  | **Buttons** | **Links** | **Anchors** |
+|-|-|-|-|
+| **Action** | A button invokes an action: Save, Cancel, Exterminate. | A link takes you somewhere (navigates). | No action; Identifies a page fragment that can be the destination of a link. |
+| **Activation key** | Activated with the Space or Enter key. | Activated with the Enter key. | No. |
+| **Screen readers** | Identified in screen readers as a button, and included in the list of form controls. | Identified in screen readers as a link, and included in the list of page links. | Screen reader reads this like a regular text. |
+| **Focusable by default?** | Yes. | Varies (user Pref). | No. |
 
 ##### Considerations when choosing an element:
- * If you style a link to look like a button, a keyboard user will not know to use the `Enter` key to click on it.
  * `<input>` elements belong inside a `<form>`.
 
 ##### There _are_ ambiguous cases:
